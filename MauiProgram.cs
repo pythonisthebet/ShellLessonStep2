@@ -30,7 +30,7 @@ public static class MauiProgram
     public static MauiAppBuilder RegisterPages(this MauiAppBuilder builder)
     {
         //--------singleton Pages
-        builder.Services.AddSingleton<CatsView>();
+        builder.Services.AddSingleton<>();
         builder.Services.AddSingleton<DogsView>();
         builder.Services.AddSingleton<MonkeysView>();
         builder.Services.AddSingleton<ElephantsView>();
