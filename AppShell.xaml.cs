@@ -1,4 +1,5 @@
-﻿using ShellLessonStep2.Views;
+﻿using ShellLessonStep2.ViewModels;
+using ShellLessonStep2.Views;
 using System.Windows.Input;
 
 namespace ShellLessonStep2;
@@ -16,7 +17,8 @@ public partial class AppShell : Shell
 	private void RegisterRoutings()
 	{
 		Routing.RegisterRoute("modalPage", typeof(ModalPage));
-	}
+        Routing.RegisterRoute("DetailsPage", typeof(DetailView));
+    }
 
     public ICommand InfoCommand { get; set; }
 	private void OnInfoClicked()

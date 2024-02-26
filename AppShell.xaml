@@ -8,23 +8,23 @@
 
 
     <!-- More than one Flyout item with multiple tabs-->
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 1,2">
+    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Domestic" Icon="paw.png">
         <ShellContent
-            Title="Tab1" Icon="icon1.png"
+            Title="Dogs" Icon="dog.png"
             ContentTemplate="{DataTemplate views:Page1}"
             Route="Tab1" />
         <ShellContent 
-                Title="Tab2" Icon="icon2.png"
+                Title="Cats" Icon="cat.png"
                 ContentTemplate="{DataTemplate views:Page2}"
                 Route="Tab2" />
     </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 3,4">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs">
         <ShellContent
-                Title="Tab3" Icon="icon3.png"
+                Title="Monkeys" Icon="monkey.png"
                 ContentTemplate="{DataTemplate views:Page3}"
                 Route="Tab3" />
         <ShellContent
-            Title="Tab4" Icon="icon4.png"
+            Title="Elephant" Icon="elephant.png"
             ContentTemplate="{DataTemplate views:Page4}"
             Route="Tab4" />
     </FlyoutItem>

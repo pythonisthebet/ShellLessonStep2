@@ -70,23 +70,43 @@
 
 	<ItemGroup>
 	  <Folder Include="Docs\" />
-	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\DogsView.xaml.cs">
+	    <DependentUpon>DogsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\CatsView.xaml.cs">
+	    <DependentUpon>CatsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\DetailsView.xaml.cs">
+	    <DependentUpon>DetailsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MonkeysView.xaml.cs">
+	    <DependentUpon>MonkeysView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ElephantsView.xaml.cs">
+	    <DependentUpon>ElephantsView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\ModalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Page1.xaml">
+	  <MauiXaml Update="Views\DetailsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Page2.xaml">
+	  <MauiXaml Update="Views\DogsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Page3.xaml">
+	  <MauiXaml Update="Views\CatsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Page4.xaml">
+	  <MauiXaml Update="Views\MonkeysView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ElephantsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
