@@ -10,17 +10,17 @@
 
 
     <!-- More than one Flyout item with multiple tabs-->
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Domestic" Icon="paw.png">
-        <ShellContent
-            Title="Dogs" Icon="dog.png"
-            ContentTemplate="{DataTemplate views:DogsView}"
-            Route="Tab1" />
-        <ShellContent 
-                Title="Cats" Icon="cat.png"
-                ContentTemplate="{DataTemplate views:CatsView}"
-                Route="Tab2" />
-    </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs" Title="Domestic">
+        <Tab Title="Domestic" Icon="paw.png" Route="domestic">
+            <ShellContent
+        Title="Dogs" Icon="dog.png"
+        ContentTemplate="{DataTemplate views:DogsView}"
+        Route="Tab1" />
+            <ShellContent 
+        Title="Cats" Icon="cat.png"
+        ContentTemplate="{DataTemplate views:CatsView}"
+        Route="Tab2" />
+        </Tab>
         <ShellContent
                 Title="Monkeys" Icon="monkey.png"
                 ContentTemplate="{DataTemplate views:MonkeysView}"
