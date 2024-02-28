@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:CollectionViewMVVM.ViewModels"
-             x:Class="CollectionViewMVVM.Views.MonkeyDetailsView"
-             x:DataType="vm:MonkeyDetailViewModel"
+             xmlns:vm="clr-namespace:ShellLessonStep2.ViewModels"
+             x:Class="ShellLessonStep2.Views.DetailsView"
+             x:DataType="vm:DetailViewModel"
              Title="DetailsView">
     <VerticalStackLayout>
         <Grid Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="30">
@@ -17,16 +17,16 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Grid.Row="0"
-                           Text="{Binding SelectedAniaml.Name}" HorizontalOptions="Center"
+                           Text="{Binding SelectedAnimal.Name}" HorizontalOptions="Center"
                            FontAttributes="Bold"/>
             <Label Grid.Column="0" Grid.Row="1"
-                           Text="{Binding SelectedAniaml.Location}" 
+                           Text="{Binding SelectedAnimal.Location}" 
                            FontAttributes="Bold" HorizontalOptions="Center"/>
             <Label Grid.Column="0" Grid.Row="2"
-                           Text="{Binding SelectedAniaml.Details}" 
+                           Text="{Binding SelectedAnimal.Details}" 
                            FontAttributes="Bold" HorizontalOptions="Center"/>
             <Image Grid.Column="0" Grid.Row="3"
-                           Source="{Binding SelectedAniaml.ImageUrl}"
+                           Source="{Binding SelectedAnimal.ImageUrl}"
                            HorizontalOptions="Center"/>
         </Grid>
     </VerticalStackLayout>

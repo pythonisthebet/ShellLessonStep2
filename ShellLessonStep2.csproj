@@ -57,6 +57,7 @@
 	  <None Remove="Resources\Images\elephant.png" />
 	  <None Remove="Resources\Images\help.png" />
 	  <None Remove="Resources\Images\icon1.png" />
+	  <None Remove="Resources\Images\images.png" />
 	  <None Remove="Resources\Images\monkey.png" />
 	  <None Remove="Resources\Images\paw.png" />
 	  <None Remove="Resources\Images\photo.jpg" />
@@ -91,6 +92,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\BearsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ModalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

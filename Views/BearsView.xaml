@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:ShellLessonStep2.ViewModels"
              xmlns:models="clr-namespace:ShellLessonStep2.Models"
-             x:Class="ShellLessonStep2.Views.MonkeysView"
-             Title="MonkeysView">
-    <CollectionView  ItemsSource="{Binding Monkeys}" ItemsLayout="VerticalList" x:Name="theCollectionView" 
-                 SelectedItem="{Binding SelectedAnimal}"
-                 SelectionMode="Single" SelectionChangedCommand="{Binding SingleSelectCommand}">
+             x:Class="ShellLessonStep2.Views.BearsView"
+             Title="BearsView">
+    <CollectionView  ItemsSource="{Binding Bears}" ItemsLayout="VerticalList" x:Name="theCollectionView" 
+         SelectedItem="{Binding SelectedAnimal}"
+         SelectionMode="Single" SelectionChangedCommand="{Binding SingleSelectCommand}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <SwipeView>
@@ -21,14 +21,14 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <Image Grid.Column="0" Grid.Row="0"
-                   Source="{Binding ImageUrl}"
-                    />
+           Source="{Binding ImageUrl}"
+            />
                         <Label Grid.Column="0" Grid.Row="1"
-                   Text="{Binding Name}"
-                    FontAttributes="Bold"/>
+           Text="{Binding Name}"
+            FontAttributes="Bold"/>
                         <Label Grid.Column="2" Grid.RowSpan="1"
-                   Text="{Binding Details}"
-                    FontAttributes="Bold"/>
+           Text="{Binding Details}"
+            FontAttributes="Bold"/>
                     </Grid>
                 </SwipeView>
             </DataTemplate>

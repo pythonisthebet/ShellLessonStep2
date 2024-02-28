@@ -17,7 +17,7 @@ public partial class AppShell : Shell
 	private void RegisterRoutings()
 	{
 		Routing.RegisterRoute("modalPage", typeof(ModalPage));
-        Routing.RegisterRoute("DetailsPage", typeof(DetailView));
+        Routing.RegisterRoute("DetailsPage", typeof(DetailsView));
     }
 
     public ICommand InfoCommand { get; set; }

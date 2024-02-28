@@ -1,8 +1,8 @@
-namespace CollectionViewMVVM.Views;
+namespace ShellLessonStep2.Views;
 
-public partial class MonkeyDetailsView : ContentPage
+public partial class DetailsView : ContentPage
 {
-	public MonkeyDetailsView(ViewModels.DetailViewModel vm)
+	public DetailsView(ViewModels.DetailViewModel vm)
 	{
 		InitializeComponent();
 		this.BindingContext = vm;

@@ -1,9 +1,12 @@
+using ShellLessonStep2.ViewModels;
+
 namespace ShellLessonStep2.Views;
 
-public partial class Page1 : ContentPage
+public partial class DogsView : ContentPage
 {
-	public Page1()
+	public DogsView(AnimalViewModel vm)
 	{
 		InitializeComponent();
-	}
+        BindingContext = vm;
+    }
 }

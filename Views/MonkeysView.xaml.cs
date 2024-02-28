@@ -1,11 +1,14 @@
+using ShellLessonStep2.ViewModels;
+
 namespace ShellLessonStep2.Views;
 
-public partial class Page3 : ContentPage
+public partial class MonkeysView : ContentPage
 {
-	public Page3()
+	public MonkeysView(AnimalViewModel vm)
 	{
 		InitializeComponent();
-	}
+        BindingContext = vm;
+    }
 
     private void Button_Clicked(object sender, EventArgs e)
     {

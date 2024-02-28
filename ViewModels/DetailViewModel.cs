@@ -13,16 +13,16 @@ namespace ShellLessonStep2.ViewModels
 
     public class DetailViewModel : ViewModelBase
     {
-        private Animal selectedMonkey;
-        public Animal SelectedMonkey
+        private Animal selectedAnimal;
+        public Animal SelectedAnimal
         {
             get
             {
-                return this.selectedMonkey;
+                return this.selectedAnimal;
             }
             set
             {
-                this.selectedMonkey = value;
+                this.selectedAnimal = value;
                 OnPropertyChanged();
             }
         }

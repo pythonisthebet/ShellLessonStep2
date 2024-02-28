@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using ShellLessonStep2.Services;
+using ShellLessonStep2.ViewModels;
 using ShellLessonStep2.Views;
 
 namespace ShellLessonStep2;
@@ -30,7 +31,8 @@ public static class MauiProgram
     public static MauiAppBuilder RegisterPages(this MauiAppBuilder builder)
     {
         //--------singleton Pages
-        builder.Services.AddSingleton<>();
+        builder.Services.AddSingleton<BearsView>();
+        builder.Services.AddSingleton<CatsView>();
         builder.Services.AddSingleton<DogsView>();
         builder.Services.AddSingleton<MonkeysView>();
         builder.Services.AddSingleton<ElephantsView>();
@@ -50,10 +52,7 @@ public static class MauiProgram
     }
     public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder builder)
     {
-        builder.Services.AddSingleton<CatsViewModel>();
-        builder.Services.AddSingleton<DogsViewModel>();
-        builder.Services.AddSingleton<MonkeysViewModel>();
-        builder.Services.AddSingleton<ElephantsViewModel>();
+        builder.Services.AddSingleton<AnimalViewModel>();
 
 
         //--------Transient ViewModels

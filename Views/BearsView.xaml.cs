@@ -2,9 +2,9 @@ using ShellLessonStep2.ViewModels;
 
 namespace ShellLessonStep2.Views;
 
-public partial class CatsView : ContentPage
+public partial class BearsView : ContentPage
 {
-	public CatsView(AnimalViewModel vm)
+	public BearsView(AnimalViewModel vm)
 	{
 		InitializeComponent();
         BindingContext = vm;
